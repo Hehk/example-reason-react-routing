@@ -22,6 +22,11 @@ let mapUrlToRoute = (url: ReasonReact.Router.url) =>
   | ["picture_2"] => Picture2
   | ["picture_3"] => Picture3
   | ["picture_4"] => Picture4
+  /* Hacky fix to get the routing working in gh-pages */
+  | ["example-reason-react-routing", "picture_1"] => Picture1
+  | ["example-reason-react-routing", "picture_2"] => Picture2
+  | ["example-reason-react-routing", "picture_3"] => Picture3
+  | ["example-reason-react-routing", "picture_4"] => Picture4
   | _ => Picture1
   };
 
